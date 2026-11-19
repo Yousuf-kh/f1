@@ -20,7 +20,12 @@
         <a href="#calendar">Calendar</a>
         <a href="#drivers">Drivers</a>
       </nav>
-      <div class="season-chip"><span></span> Season 2026</div>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+          <span class="theme-icon">☀</span>
+        </button>
+        <div class="season-chip"><span></span> Season 2026</div>
+      </div>
     </header>
 
     <main>
@@ -48,6 +53,14 @@
             <div><strong id="mins">00</strong><span>Min</span></div>
           </div>
         </div>
+      </section>
+
+      <section class="pulse-bar" aria-label="Season statistics">
+        <div><span>24</span><small>Grand Prix</small></div>
+        <div><span>22</span><small>Drivers</small></div>
+        <div><span>11</span><small>Teams</small></div>
+        <div><span>132</span><small>Career points</small></div>
+        <div class="pulse-live"><i></i><span>LIVE</span><small>2026 season</small></div>
       </section>
 
       <section class="standings section" id="standings">
