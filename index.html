@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 2026 — Season Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="F1 главная">
+        <span class="brand-mark">F</span><span class="brand-slash">1</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="active" href="#overview">Overview</a>
+        <a href="#standings">Standings</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#drivers">Drivers</a>
+      </nav>
+      <div class="season-chip"><span></span> Season 2026</div>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="hero-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span>2026</span> World Championship</div>
+          <h1>Built for<br /><em>speed.</em></h1>
+          <p>Трассы. Гонки. Чемпионы.</p>
+        </div>
+        <div class="race-card">
+          <div class="race-card-head">
+            <div>
+              <span>Next race</span>
+              <strong>Round 04</strong>
+            </div>
+            <div class="flag">🇯🇵</div>
+          </div>
+          <div class="race-name">Japanese Grand Prix</div>
+          <div class="race-meta"><span>Suzuka</span><span>APR 11–12</span></div>
+          <div class="countdown" id="countdown">
+            <div><strong id="days">00</strong><span>Days</span></div>
+            <div><strong id="hours">00</strong><span>Hrs</span></div>
+            <div><strong id="mins">00</strong><span>Min</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="standings section" id="standings">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">Championship</span>
+            <h2>Standings</h2>
+          </div>
+          <div class="segmented">
+            <button class="active" data-table="drivers">Drivers</button>
+            <button data-table="teams">Teams</button>
+          </div>
+        </div>
+        <div class="leader-grid" id="leaderGrid"></div>
+      </section>
+
+      <section class="calendar section" id="calendar">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">Race by race</span>
+            <h2>2026 Calendar</h2>
+          </div>
+          <a class="text-link" href="#calendar">View full calendar <span>→</span></a>
+        </div>
+        <div class="race-list" id="raceList"></div>
+      </section>
+
+      <section class="drivers section" id="drivers">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">The grid</span>
+            <h2>Drivers</h2>
+          </div>
+        </div>
+        <div class="driver-grid" id="driverGrid"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
